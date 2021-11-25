@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Metodos_Ord_Interna.Ordenamientos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Metodos_Ord_Interna
 {
     public partial class Form1 : Form
     {
+        IntercambioDirecto IntercambioDirecto = new IntercambioDirecto();
+
         public struct DatosPersonas
         {
             public int numero;
@@ -90,6 +93,11 @@ namespace Metodos_Ord_Interna
             {
                 dataGridView1.Rows.Add(Convert.ToString(Datos[i].numero), Datos[i].nombre, Convert.ToString(Datos[i].edad));
             }
+        }
+
+        private void btnIntercambioDirecto_Click(object sender, EventArgs e)
+        {
+            IntercambioDirecto.Ordenar(contador, Datos, dataGridView1);
         }
     }
 }

@@ -45,9 +45,13 @@ namespace Metodos_Ord_Interna
             this.label4 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnIntercambioDirecto = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -180,6 +184,7 @@ namespace Metodos_Ord_Interna
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtNumero);
@@ -194,6 +199,36 @@ namespace Metodos_Ord_Interna
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 328);
             this.panel2.TabIndex = 9;
+            // 
+            // btnIntercambioDirecto
+            // 
+            this.btnIntercambioDirecto.Location = new System.Drawing.Point(32, 50);
+            this.btnIntercambioDirecto.Name = "btnIntercambioDirecto";
+            this.btnIntercambioDirecto.Size = new System.Drawing.Size(75, 44);
+            this.btnIntercambioDirecto.TabIndex = 8;
+            this.btnIntercambioDirecto.Text = "Intercambio Directo";
+            this.btnIntercambioDirecto.UseVisualStyleBackColor = true;
+            this.btnIntercambioDirecto.Click += new System.EventHandler(this.btnIntercambioDirecto_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.btnIntercambioDirecto);
+            this.groupBox1.Location = new System.Drawing.Point(405, 15);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(138, 122);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ascendente";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(36, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Por Número:";
             // 
             // Form1
             // 
@@ -210,6 +245,8 @@ namespace Metodos_Ord_Interna
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -232,6 +269,9 @@ namespace Metodos_Ord_Interna
         private System.Windows.Forms.TextBox txtMaximo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnIntercambioDirecto;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label5;
     }
 }
 
