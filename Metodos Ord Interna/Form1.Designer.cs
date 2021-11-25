@@ -50,10 +50,15 @@ namespace Metodos_Ord_Interna
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnInsercionDirecta = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.btnSecuencial = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -123,7 +128,7 @@ namespace Metodos_Ord_Interna
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(23, 151);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 157);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(345, 150);
@@ -186,6 +191,7 @@ namespace Metodos_Ord_Interna
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label1);
@@ -253,6 +259,44 @@ namespace Metodos_Ord_Interna
             this.btnInsercionDirecta.UseVisualStyleBackColor = true;
             this.btnInsercionDirecta.Click += new System.EventHandler(this.btnInsercionDirecta_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnSecuencial);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.txtBusqueda);
+            this.groupBox2.Location = new System.Drawing.Point(405, 207);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(138, 100);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Buscar";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Número:";
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Location = new System.Drawing.Point(69, 19);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(51, 20);
+            this.txtBusqueda.TabIndex = 3;
+            // 
+            // btnSecuencial
+            // 
+            this.btnSecuencial.Location = new System.Drawing.Point(32, 58);
+            this.btnSecuencial.Name = "btnSecuencial";
+            this.btnSecuencial.Size = new System.Drawing.Size(75, 31);
+            this.btnSecuencial.TabIndex = 13;
+            this.btnSecuencial.Text = "Secuencial";
+            this.btnSecuencial.UseVisualStyleBackColor = true;
+            this.btnSecuencial.Click += new System.EventHandler(this.btnSecuencial_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,6 +314,8 @@ namespace Metodos_Ord_Interna
             this.panel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -297,6 +343,10 @@ namespace Metodos_Ord_Interna
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnInsercionDirecta;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Button btnSecuencial;
     }
 }
 

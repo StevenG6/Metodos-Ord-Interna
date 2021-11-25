@@ -18,5 +18,11 @@ namespace Metodos_Ord_Interna
                 dataGridView.Rows.Add(Convert.ToString(Datos[i].numero), Datos[i].nombre, Convert.ToString(Datos[i].edad));
             }
         }
+
+        public virtual void Buscar(int N, int numBuscar, DatosPersonas[] Datos, DataGridView dataGridView)  //Recibe posicion de registro encontrado, numero que se buscó, struct de datos, data para mostrar reg encontrado
+        {
+            dataGridView.Rows.Clear();
+            dataGridView.Rows.Add(Convert.ToString(Datos[N].numero), Datos[N].nombre, Convert.ToString(Datos[N].edad));
+        }
     }
 }

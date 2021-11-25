@@ -1,4 +1,5 @@
-﻿using Metodos_Ord_Interna.Ordenamientos;
+﻿using Metodos_Ord_Interna.Busquedas;
+using Metodos_Ord_Interna.Ordenamientos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace Metodos_Ord_Interna
     {
         IntercambioDirecto IntercambioDirecto = new IntercambioDirecto();
         InsercionDirecta InsercionDirecta = new InsercionDirecta();
+
+        Secuencial Secuencial = new Secuencial();
 
         public struct DatosPersonas
         {
@@ -104,6 +107,18 @@ namespace Metodos_Ord_Interna
         private void btnInsercionDirecta_Click(object sender, EventArgs e)
         {
             InsercionDirecta.Ordenar(contador, Datos, dataGridView1);
+        }
+
+        private void btnSecuencial_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Secuencial.Buscar(contador, Convert.ToInt32(txtBusqueda.Text), Datos, dataGridView1);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
