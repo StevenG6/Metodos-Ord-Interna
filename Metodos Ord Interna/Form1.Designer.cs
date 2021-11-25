@@ -54,6 +54,7 @@ namespace Metodos_Ord_Interna
             this.label7 = new System.Windows.Forms.Label();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.btnSecuencial = new System.Windows.Forms.Button();
+            this.btnBinaria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -261,12 +262,13 @@ namespace Metodos_Ord_Interna
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnBinaria);
             this.groupBox2.Controls.Add(this.btnSecuencial);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtBusqueda);
             this.groupBox2.Location = new System.Drawing.Point(405, 207);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(138, 100);
+            this.groupBox2.Size = new System.Drawing.Size(226, 100);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar";
@@ -274,7 +276,7 @@ namespace Metodos_Ord_Interna
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 22);
+            this.label7.Location = new System.Drawing.Point(61, 25);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 13);
             this.label7.TabIndex = 2;
@@ -282,20 +284,30 @@ namespace Metodos_Ord_Interna
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(69, 19);
+            this.txtBusqueda.Location = new System.Drawing.Point(114, 22);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(51, 20);
             this.txtBusqueda.TabIndex = 3;
             // 
             // btnSecuencial
             // 
-            this.btnSecuencial.Location = new System.Drawing.Point(32, 58);
+            this.btnSecuencial.Location = new System.Drawing.Point(31, 53);
             this.btnSecuencial.Name = "btnSecuencial";
             this.btnSecuencial.Size = new System.Drawing.Size(75, 31);
             this.btnSecuencial.TabIndex = 13;
             this.btnSecuencial.Text = "Secuencial";
             this.btnSecuencial.UseVisualStyleBackColor = true;
             this.btnSecuencial.Click += new System.EventHandler(this.btnSecuencial_Click);
+            // 
+            // btnBinaria
+            // 
+            this.btnBinaria.Location = new System.Drawing.Point(121, 53);
+            this.btnBinaria.Name = "btnBinaria";
+            this.btnBinaria.Size = new System.Drawing.Size(75, 31);
+            this.btnBinaria.TabIndex = 14;
+            this.btnBinaria.Text = "Binaria";
+            this.btnBinaria.UseVisualStyleBackColor = true;
+            this.btnBinaria.Click += new System.EventHandler(this.btnBinaria_Click);
             // 
             // Form1
             // 
@@ -347,6 +359,7 @@ namespace Metodos_Ord_Interna
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.Button btnSecuencial;
+        private System.Windows.Forms.Button btnBinaria;
     }
 }
 

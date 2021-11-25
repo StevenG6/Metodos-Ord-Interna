@@ -18,6 +18,7 @@ namespace Metodos_Ord_Interna
         InsercionDirecta InsercionDirecta = new InsercionDirecta();
 
         Secuencial Secuencial = new Secuencial();
+        Binaria Binaria = new Binaria();
 
         public struct DatosPersonas
         {
@@ -114,6 +115,18 @@ namespace Metodos_Ord_Interna
             try
             {
                 Secuencial.Buscar(contador, Convert.ToInt32(txtBusqueda.Text), Datos, dataGridView1);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnBinaria_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Binaria.Buscar(contador, Convert.ToInt32(txtBusqueda.Text), Datos, dataGridView1);
             }
             catch (Exception ex)
             {
