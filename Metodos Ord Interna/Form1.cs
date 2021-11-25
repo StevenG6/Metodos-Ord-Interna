@@ -14,6 +14,7 @@ namespace Metodos_Ord_Interna
     public partial class Form1 : Form
     {
         IntercambioDirecto IntercambioDirecto = new IntercambioDirecto();
+        InsercionDirecta InsercionDirecta = new InsercionDirecta();
 
         public struct DatosPersonas
         {
@@ -98,6 +99,11 @@ namespace Metodos_Ord_Interna
         private void btnIntercambioDirecto_Click(object sender, EventArgs e)
         {
             IntercambioDirecto.Ordenar(contador, Datos, dataGridView1);
+        }
+
+        private void btnInsercionDirecta_Click(object sender, EventArgs e)
+        {
+            InsercionDirecta.Ordenar(contador, Datos, dataGridView1);
         }
     }
 }

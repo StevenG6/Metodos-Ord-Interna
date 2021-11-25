@@ -48,6 +48,8 @@ namespace Metodos_Ord_Interna
             this.btnIntercambioDirecto = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnInsercionDirecta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -202,7 +204,7 @@ namespace Metodos_Ord_Interna
             // 
             // btnIntercambioDirecto
             // 
-            this.btnIntercambioDirecto.Location = new System.Drawing.Point(32, 50);
+            this.btnIntercambioDirecto.Location = new System.Drawing.Point(32, 44);
             this.btnIntercambioDirecto.Name = "btnIntercambioDirecto";
             this.btnIntercambioDirecto.Size = new System.Drawing.Size(75, 44);
             this.btnIntercambioDirecto.TabIndex = 8;
@@ -212,11 +214,13 @@ namespace Metodos_Ord_Interna
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.btnInsercionDirecta);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnIntercambioDirecto);
             this.groupBox1.Location = new System.Drawing.Point(405, 15);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(138, 122);
+            this.groupBox1.Size = new System.Drawing.Size(138, 186);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ascendente";
@@ -224,11 +228,30 @@ namespace Metodos_Ord_Interna
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(36, 29);
+            this.label5.Location = new System.Drawing.Point(36, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "Por Número:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(42, 103);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Por Edad:";
+            // 
+            // btnInsercionDirecta
+            // 
+            this.btnInsercionDirecta.Location = new System.Drawing.Point(32, 124);
+            this.btnInsercionDirecta.Name = "btnInsercionDirecta";
+            this.btnInsercionDirecta.Size = new System.Drawing.Size(75, 44);
+            this.btnInsercionDirecta.TabIndex = 11;
+            this.btnInsercionDirecta.Text = "Inserción Directa";
+            this.btnInsercionDirecta.UseVisualStyleBackColor = true;
+            this.btnInsercionDirecta.Click += new System.EventHandler(this.btnInsercionDirecta_Click);
             // 
             // Form1
             // 
@@ -272,6 +295,8 @@ namespace Metodos_Ord_Interna
         private System.Windows.Forms.Button btnIntercambioDirecto;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnInsercionDirecta;
     }
 }
 
